@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <video controls autoplay class="fullscreen">
+      <source src="@/assets/andre.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import { Component, Vue } from 'vue-property-decorator';
 
-export default {
-  name: "Home",
-  components: {
-    HelloWorld
-  }
-};
+@Component({})
+export default class Home extends Vue {}
 </script>
+
+<style lang="scss" scoped>
+.fullscreen {
+  width: 100%;
+  height: 100%;
+}
+</style>
