@@ -17,6 +17,6 @@ module.exports = {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     "@typescript/interface-name-prefix": "off",
-    "interface-name-prefix": "off"
+    "interface-name": [true, "never-prefix"]
   }
 };
