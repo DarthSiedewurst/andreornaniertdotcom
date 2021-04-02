@@ -36,5 +36,11 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+    "rules": {
+      "interface-name": [
+        true,
+        "never-prefix"
+      ]
+    }
 }

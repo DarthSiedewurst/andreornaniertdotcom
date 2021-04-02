@@ -31,8 +31,8 @@ jobs:
           script: |
             cd /var/www/vhosts/andreornaniert.com/docker/andreornaniertdotcom
             git pull
-            docker stop andreornaniertdotcom
             docker rm andreornaniertdotcom
             docker rmi andreornaniertdotcomimage
             docker build -t andreornaniertdotcomimage .
-            docker run -d --restart always -p 5002:5002 --name andreornaniertdotcom andreornaniertdotcomimage
+            docker run -d -it -v"$(pwd):/code" -p 5005:5005 --name andreornaniertdotcom andreornaniertdotcomimage
+            docker stop andreornaniertdotcom
