@@ -1,19 +1,31 @@
 <template>
   <b-container class="mt-5">
     <b-row>
-      <b-col cols="10">
+      <b-col cols="9">
         <h1>Armour</h1>
-        <armour
-          :armourOptions="helmetList"
-          :armourType="armourTypeConst.Helmet"
-          @helmetChanged="helmetChanged"
-        ></armour>
-        <armour :armourOptions="bodyList" :armourType="armourTypeConst.Body" @bodyChanged="bodyChanged"></armour>
+        <b-card>
+          <armour
+            :armourOptions="helmetList"
+            :armourType="armourTypeConst.Helmet"
+            @helmetChanged="helmetChanged"
+            @helmetSlotsChanged="helmetSlotsChanged"
+          ></armour>
+        </b-card>
+        <b-card class="mt-5">
+          <armour
+            :armourOptions="bodyList"
+            :armourType="armourTypeConst.Body"
+            @bodyChanged="bodyChanged"
+            @bodySlotsChanged="bodySlotsChanged"
+          ></armour>
+        </b-card>
       </b-col>
       <b-col>
         <h1>Status</h1>
-        <status :skills="skills"></status
-      ></b-col>
+        <b-card>
+          <status :skills="skills"></status>
+        </b-card>
+      </b-col>
     </b-row>
   </b-container>
 </template>
@@ -36,6 +48,9 @@ export default class Home extends Vue {
   private helmetSkills: ISkills[] = [];
   private bodySkills: ISkills[] = [];
 
+  private decorationsHelmet: ISkills[] = [];
+  private decorationsBody: ISkills[] = [];
+
   private get armourTypeConst() {
     return armourType;
   }
@@ -44,6 +59,9 @@ export default class Home extends Vue {
     let skills: ISkills[] = [];
     this.helmetSkills.forEach((element) => skills.push(Object.assign({}, element)));
     skills = this.fillSkillList(skills, this.bodySkills);
+
+    skills = this.fillSkillList(skills, this.decorationsHelmet);
+    skills = this.fillSkillList(skills, this.decorationsBody);
     return skills;
   }
 
@@ -72,6 +90,12 @@ export default class Home extends Vue {
 
   private bodyChanged(val: IArmour): void {
     this.bodySkills = val.skills;
+  }
+  private helmetSlotsChanged(val: ISkills[]): void {
+    this.decorationsHelmet = val;
+  }
+  private bodySlotsChanged(val: ISkills[]): void {
+    this.decorationsBody = val;
   }
 }
 </script>

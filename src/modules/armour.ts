@@ -6,7 +6,7 @@ export const helmetList: IArmour[] = [
     name: 'Khezu',
     defense: 32,
     decorationsNumber: 1,
-    slotLevel: 3,
+    slotLevel: 2,
     skills: [{ skill: skills.Slugger, addedNumber: 1 }],
   },
   {
