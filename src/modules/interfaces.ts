@@ -18,4 +18,7 @@ export interface ISkills {
 export const armourType = {
   Helmet: 'Helmet',
   Body: 'Body',
+  Gloves: ' Gloves',
+  Belt: ' Belt',
+  Boots: 'Boots',
 };

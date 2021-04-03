@@ -49,7 +49,7 @@
     <b-row class="mt-2">
       <b-col cols="3">{{ armourType }} Slots</b-col>
       <b-col v-for="decoration in armour.decorationsNumber" :key="decoration.index" cols="3">
-        {{ decoration }}. Slot
+        {{ decoration }}. Slot (Level {{ armour.slotLevel }})
         <decoration
           ref="form"
           :slotLevel="armour.slotLevel"
@@ -129,6 +129,15 @@ export default class Armour extends Vue {
       case armourType.Body:
         this.$emit('bodyChanged', val);
         break;
+      case armourType.Gloves:
+        this.$emit('glovesChanged', val);
+        break;
+      case armourType.Belt:
+        this.$emit('beltChanged', val);
+        break;
+      case armourType.Boots:
+        this.$emit('bootsChanged', val);
+        break;
       default:
         break;
     }
@@ -142,6 +151,15 @@ export default class Armour extends Vue {
         break;
       case armourType.Body:
         this.$emit('bodySlotsChanged', val);
+        break;
+      case armourType.Gloves:
+        this.$emit('glovesSlotsChanged', val);
+        break;
+      case armourType.Belt:
+        this.$emit('beltSlotsChanged', val);
+        break;
+      case armourType.Boots:
+        this.$emit('bootsSlotsChanged', val);
         break;
       default:
         break;

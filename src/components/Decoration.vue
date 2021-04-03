@@ -8,7 +8,7 @@
       :custom-label="customLabel"
       track-by="skill"
       :allow-empty="true"
-      :internal-search="false"
+      :internal-search="true"
       selectedLabel=""
       selectLabel=""
       deselectLabel=""
@@ -68,7 +68,6 @@ export default class Decoration extends Vue {
   }
 
   private clearSlot() {
-    console.log('klappt');
     this.decoration = { skill: { name: '', maxNumber: 0 }, addedNumber: 0 };
   }
 }
