@@ -1,3 +1,4 @@
+/* eslint-disable */
 export interface IArmour {
   name: string;
   defense: number;
