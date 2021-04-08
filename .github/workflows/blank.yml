@@ -34,5 +34,8 @@ jobs:
             docker rm andreornaniertdotcom
             docker rmi andreornaniertdotcomimage
             docker build -t andreornaniertdotcomimage .
-            docker run -d -it -v"$(pwd):/code" -p 5005:5005 --name andreornaniertdotcom andreornaniertdotcomimage
+            docker run -v"$(pwd):/code" -p 5005:5005 --name andreornaniertdotcom andreornaniertdotcomimage .
+            npm run install
+            npm run build
+            exit
             docker stop andreornaniertdotcom
