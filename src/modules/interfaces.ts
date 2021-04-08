@@ -1,8 +1,7 @@
 export interface IArmour {
   name: string;
   defense: number;
-  decorationsNumber: number;
-  slotLevel: number;
+  decorations: number[];
   skills: ISkills[];
 }
 export interface ISkill {

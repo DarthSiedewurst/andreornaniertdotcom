@@ -5,8 +5,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Kamura Head Scarf S',
     defense: 30,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.DivineBlessing, addedNumber: 2 },
       { skill: skills.Resuscitate, addedNumber: 1 },
@@ -15,8 +14,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Leather S',
     defense: 30,
-    decorationsNumber: 2,
-    slotLevel: 1,
+    decorations: [1, 1],
     skills: [
       { skill: skills.Geologist, addedNumber: 1 },
       { skill: skills.HungerResistance, addedNumber: 1 },
@@ -25,8 +23,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Chainmail Headgear S',
     defense: 32,
-    decorationsNumber: 1,
-    slotLevel: 2,
+    decorations: [2],
     skills: [
       { skill: skills.Botanist, addedNumber: 1 },
       { skill: skills.DefenseBoost, addedNumber: 1 },
@@ -35,15 +32,13 @@ export const helmetList: IArmour[] = [
   {
     name: 'Hunters Helm S',
     defense: 32,
-    decorationsNumber: 1,
-    slotLevel: 2,
+    decorations: [2],
     skills: [{ skill: skills.ItemProlonger, addedNumber: 1 }],
   },
   {
     name: 'Alloy Helm S',
     defense: 32,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.WaterAttack, addedNumber: 1 },
       { skill: skills.ProtectivePolish, addedNumber: 1 },
@@ -52,8 +47,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Bone Helm S',
     defense: 32,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.StaminaThief, addedNumber: 1 },
       { skill: skills.Partbreaker, addedNumber: 1 },
@@ -62,15 +56,13 @@ export const helmetList: IArmour[] = [
   {
     name: 'Skalda Vertex S',
     defense: 32,
-    decorationsNumber: 1,
-    slotLevel: 2,
+    decorations: [2],
     skills: [{ skill: skills.PoisonAttack, addedNumber: 2 }],
   },
   {
-    name: 'Bnahabra S',
+    name: 'Bnahabra Hat S',
     defense: 34,
-    decorationsNumber: 1,
-    slotLevel: 2,
+    decorations: [2],
     skills: [
       { skill: skills.PoisonAttack, addedNumber: 1 },
       { skill: skills.RecoilDown, addedNumber: 2 },
@@ -79,29 +71,25 @@ export const helmetList: IArmour[] = [
   {
     name: 'Izuchi Helm S',
     defense: 36,
-    decorationsNumber: 2,
-    slotLevel: 1,
+    decorations: [1, 1],
     skills: [{ skill: skills.CriticalEye, addedNumber: 1 }],
   },
   {
-    name: 'Baggi S',
+    name: 'Baggi Helm S',
     defense: 36,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    decorations: [2, 1],
     skills: [{ skill: skills.IceAttack, addedNumber: 2 }],
   },
   {
-    name: 'Kula-Ya-Ku S',
+    name: 'Kula-Ya-Ku Helm S',
     defense: 38,
-    decorationsNumber: 2,
-    slotLevel: 1,
+    decorations: [1, 1],
     skills: [{ skill: skills.MaximumMight, addedNumber: 1 }],
   },
   {
     name: 'Wroggi Helm S',
     defense: 38,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.RapidFireUp, addedNumber: 1 },
       { skill: skills.EvadeExtender, addedNumber: 1 },
@@ -110,8 +98,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Arzuros Helm S',
     defense: 36,
-    decorationsNumber: 2,
-    slotLevel: 1,
+    decorations: [1, 1],
     skills: [
       { skill: skills.Fortify, addedNumber: 1 },
       { skill: skills.DefenseBoost, addedNumber: 1 },
@@ -120,8 +107,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Lagombi Helm S',
     defense: 36,
-    decorationsNumber: 1,
-    slotLevel: 3,
+    decorations: [3],
     skills: [
       { skill: skills.CriticalEye, addedNumber: 1 },
       { skill: skills.IceAttack, addedNumber: 2 },
@@ -130,18 +116,16 @@ export const helmetList: IArmour[] = [
   {
     name: 'Aknosom Helm S',
     defense: 38,
-    decorationsNumber: 1,
-    slotLevel: 2,
+    decorations: [2],
     skills: [
-      { skill: skills.FireAttack, addedNumber: 1 },
       { skill: skills.QuickSheath, addedNumber: 1 },
+      { skill: skills.FireAttack, addedNumber: 1 },
     ],
   },
   {
     name: 'Khezu Helm S',
     defense: 38,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.Focus, addedNumber: 1 },
       { skill: skills.RecoveryUp, addedNumber: 1 },
@@ -150,25 +134,34 @@ export const helmetList: IArmour[] = [
   {
     name: 'Tetranodon Helm S',
     defense: 40,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.NormalRapidUp, addedNumber: 1 },
-      { skill: skills.QuickSheath, addedNumber: 1 },
+      { skill: skills.SpeedEating, addedNumber: 1 },
     ],
   },
   {
     name: 'Ingot Helm S',
     defense: 40,
-    decorationsNumber: 2,
-    slotLevel: 3,
+    decorations: [3, 1],
     skills: [{ skill: skills.Windproof, addedNumber: 1 }],
+  },
+  {
+    name: 'Chaos Archbun',
+    defense: 40,
+    decorations: [1, 1],
+    skills: [{ skill: skills.Mushroomancer, addedNumber: 1 }],
+  },
+  {
+    name: 'Edel Vizor S',
+    defense: 40,
+    decorations: [2, 2],
+    skills: [{ skill: skills.PoisonResistance, addedNumber: 2 }],
   },
   {
     name: 'Slagtoth Hood S',
     defense: 42,
-    decorationsNumber: 1,
-    slotLevel: 3,
+    decorations: [3],
     skills: [
       { skill: skills.FreeMeal, addedNumber: 1 },
       { skill: skills.Diversion, addedNumber: 1 },
@@ -177,8 +170,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Rhenopolos Helm S',
     defense: 42,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.PierceUp, addedNumber: 2 },
       { skill: skills.StunResistance, addedNumber: 1 },
@@ -187,36 +179,19 @@ export const helmetList: IArmour[] = [
   {
     name: 'Buffango Mask S',
     defense: 36,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [{ skill: skills.Bludgeoner, addedNumber: 2 }],
-  },
-  {
-    name: 'Droth S ?????????????????????????????????????????????',
-    defense: 40,
-    decorationsNumber: 0,
-    slotLevel: 0,
-    skills: [],
-  },
-  {
-    name: 'Jaggi S ?????????????????????????????????????????????',
-    defense: 40,
-    decorationsNumber: 0,
-    slotLevel: 0,
-    skills: [],
   },
   {
     name: 'Jaggi Mask S',
     defense: 36,
-    decorationsNumber: 1,
-    slotLevel: 2,
+    decorations: [2],
     skills: [{ skill: skills.AffinitySliding, addedNumber: 1 }],
   },
   {
     name: 'Volvidon Helm S',
     defense: 50,
-    decorationsNumber: 2,
-    slotLevel: 1,
+    decorations: [1, 1],
     skills: [
       { skill: skills.ParalysisAttack, addedNumber: 2 },
       { skill: skills.Bludgeoner, addedNumber: 1 },
@@ -225,8 +200,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Ludroth Helm S',
     defense: 48,
-    decorationsNumber: 2,
-    slotLevel: 1,
+    decorations: [1, 1],
     skills: [
       { skill: skills.MarathonRunner, addedNumber: 1 },
       { skill: skills.PeakPerformance, addedNumber: 1 },
@@ -234,9 +208,8 @@ export const helmetList: IArmour[] = [
   },
   {
     name: 'Barroth Helm S',
-    defense: 40,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    defense: 50,
+    decorations: [2, 1],
     skills: [
       { skill: skills.AttackBoost, addedNumber: 1 },
       { skill: skills.DefenseBoost, addedNumber: 1 },
@@ -246,8 +219,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Bishanten Helm S',
     defense: 52,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.ItemProlonger, addedNumber: 1 },
       { skill: skills.WideRange, addedNumber: 1 },
@@ -257,18 +229,16 @@ export const helmetList: IArmour[] = [
   {
     name: 'Pukei-Pukei Helm S',
     defense: 50,
-    decorationsNumber: 1,
-    slotLevel: 2,
+    decorations: [2],
     skills: [
       { skill: skills.SpecialAmmoBoost, addedNumber: 1 },
       { skill: skills.SpareShot, addedNumber: 1 },
     ],
   },
   {
-    name: 'Jyuratodus Helm S',
+    name: 'Jyuratodus Helm',
     defense: 48,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    decorations: [2, 1],
     skills: [
       { skill: skills.OffensiveGuard, addedNumber: 1 },
       { skill: skills.EvadeExtender, addedNumber: 1 },
@@ -277,8 +247,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Basarios Helm S',
     defense: 52,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    decorations: [2, 1],
     skills: [
       { skill: skills.LoadShells, addedNumber: 1 },
       { skill: skills.DefenseBoost, addedNumber: 2 },
@@ -287,29 +256,19 @@ export const helmetList: IArmour[] = [
   {
     name: 'Rathian Helm S',
     defense: 52,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    decorations: [2, 1],
     skills: [{ skill: skills.BlightResistance, addedNumber: 1 }],
   },
   {
     name: 'Skull Visage S',
     defense: 50,
-    decorationsNumber: 2,
-    slotLevel: 3,
+    decorations: [3, 2],
     skills: [{ skill: skills.Fortify, addedNumber: 1 }],
-  },
-  {
-    name: 'Chrome???????????????????????????????? S',
-    defense: 40,
-    decorationsNumber: 0,
-    slotLevel: 0,
-    skills: [],
   },
   {
     name: 'Dober Helm',
     defense: 52,
-    decorationsNumber: 2,
-    slotLevel: 1,
+    decorations: [1, 1],
     skills: [
       { skill: skills.DragonAttack, addedNumber: 1 },
       { skill: skills.AttackBoost, addedNumber: 1 },
@@ -319,29 +278,43 @@ export const helmetList: IArmour[] = [
   {
     name: 'S. Studded Hat S',
     defense: 52,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    decorations: [2, 1],
     skills: [{ skill: skills.AimBooster, addedNumber: 2 }],
+  },
+  {
+    name: 'Melahoa Hat S',
+    defense: 52,
+    decorations: [2, 2],
+    skills: [{ skill: skills.ParalysisResistance, addedNumber: 2 }],
   },
   {
     name: 'Death Strench Brain S',
     defense: 52,
-    decorationsNumber: 1,
-    slotLevel: 3,
+    decorations: [2],
     skills: [{ skill: skills.ProtectivePolish, addedNumber: 1 }],
   },
   {
-    name: 'Valk Helm S',
+    name: 'Mosgharl Vizor S',
     defense: 52,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    decorations: [2, 2],
+    skills: [{ skill: skills.BlastResistance, addedNumber: 2 }],
+  },
+  {
+    name: 'Vaik Helm S',
+    defense: 52,
+    decorations: [2, 1],
     skills: [{ skill: skills.AmmoUp, addedNumber: 2 }],
+  },
+  {
+    name: 'Makluva Hood S',
+    defense: 52,
+    decorations: [2, 2],
+    skills: [{ skill: skills.SleepResistance, addedNumber: 1 }],
   },
   {
     name: 'Utsushi Mask (V) S',
     defense: 52,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.SpeedEating, addedNumber: 1 },
       { skill: skills.FreeMeal, addedNumber: 1 },
@@ -351,8 +324,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Utsushi Mask (Hidden) S',
     defense: 52,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.RazorSharp, addedNumber: 2 },
       { skill: skills.SpareShot, addedNumber: 2 },
@@ -360,38 +332,27 @@ export const helmetList: IArmour[] = [
     ],
   },
   {
-    name: 'Uroktor????????????????????????????????',
-    defense: 40,
-    decorationsNumber: 0,
-    slotLevel: 0,
-    skills: [],
-  },
-  {
-    name: 'Remobra S',
+    name: 'Remobra Headgear S',
     defense: 52,
-    decorationsNumber: 1,
-    slotLevel: 2,
-    skills: [{ skill: skills.Windproof, addedNumber: 1 }],
+    decorations: [2],
+    skills: [{ skill: skills.Windproof, addedNumber: 2 }],
   },
   {
     name: 'Somnacanth Helm S',
     defense: 58,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    decorations: [2, 1],
     skills: [{ skill: skills.SleepAttack, addedNumber: 1 }],
   },
   {
     name: 'Barioth Helm S',
     defense: 58,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [{ skill: skills.CriticalDraw, addedNumber: 2 }],
   },
   {
-    name: 'Kadachi Helm S',
+    name: 'Tobi-Kadachi Helm S',
     defense: 58,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    decorations: [1, 1],
     skills: [
       { skill: skills.JumpMaster, addedNumber: 1 },
       { skill: skills.Constitution, addedNumber: 1 },
@@ -401,8 +362,7 @@ export const helmetList: IArmour[] = [
   {
     name: 'Anjanath Helm S',
     defense: 60,
-    decorationsNumber: 1,
-    slotLevel: 2,
+    decorations: [2],
     skills: [
       { skill: skills.Focus, addedNumber: 1 },
       { skill: skills.Slugger, addedNumber: 1 },
@@ -411,22 +371,28 @@ export const helmetList: IArmour[] = [
   {
     name: 'Nargacuga Helm S',
     defense: 60,
-    decorationsNumber: 1,
-    slotLevel: 3,
+    decorations: [3],
     skills: [{ skill: skills.EvadeWindow, addedNumber: 1 }],
   },
   {
-    name: 'Nargacuga Helm S',
+    name: 'Mizutsune Helm S',
     defense: 60,
-    decorationsNumber: 2,
-    slotLevel: 2,
+    decorations: [2, 1],
     skills: [{ skill: skills.Resuscitate, addedNumber: 1 }],
+  },
+  {
+    name: 'Rathalos Helm S',
+    defense: 62,
+    decorations: [1, 1],
+    skills: [
+      { skill: skills.AttackBoost, addedNumber: 1 },
+      { skill: skills.Partbreaker, addedNumber: 1 },
+    ],
   },
   {
     name: 'Zinogre Helm S',
     defense: 62,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [
       { skill: skills.LatentPower, addedNumber: 1 },
       { skill: skills.WeaknessExploit, addedNumber: 1 },
@@ -435,39 +401,109 @@ export const helmetList: IArmour[] = [
   {
     name: 'Aelucanth Vertex S',
     defense: 62,
-    decorationsNumber: 1,
-    slotLevel: 1,
+    decorations: [1],
     skills: [{ skill: skills.CriticalElement, addedNumber: 2 }],
+  },
+  {
+    name: 'Brigade Lobos S',
+    defense: 62,
+    decorations: [3, 1],
+    skills: [{ skill: skills.Botanist, addedNumber: 2 }],
+  },
+  {
+    name: 'Mighty Bow Feather',
+    defense: 56,
+    decorations: [],
+    skills: [{ skill: skills.BowChargePlus, addedNumber: 1 }],
   },
   {
     name: 'Gargwa Mask S',
     defense: 54,
-    decorationsNumber: 0,
-    slotLevel: 0,
+    decorations: [],
     skills: [
       { skill: skills.LeapOfFaith, addedNumber: 1 },
       { skill: skills.GoodLuck, addedNumber: 1 },
     ],
   },
   {
+    name: 'Sinister Helm S',
+    defense: 64,
+    decorations: [2],
+    skills: [
+      { skill: skills.Resentment, addedNumber: 1 },
+      { skill: skills.Handicraft, addedNumber: 1 },
+      { skill: skills.FlinchFree, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Goss Harag Helm S',
+    defense: 64,
+    decorations: [1, 1],
+    skills: [
+      { skill: skills.CriticalDraw, addedNumber: 1 },
+      { skill: skills.Agitator, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Almudron Helm S',
+    defense: 64,
+    decorations: [2, 2],
+    skills: [{ skill: skills.RapidMorph, addedNumber: 2 }],
+  },
+  {
+    name: 'Tigrex Helm S',
+    defense: 64,
+    decorations: [2, 1],
+    skills: [
+      { skill: skills.Earplugs, addedNumber: 1 },
+      { skill: skills.SpeedEating, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Diablos Helm S',
+    defense: 64,
+    decorations: [2],
+    skills: [
+      { skill: skills.Guard, addedNumber: 1 },
+      { skill: skills.StaminaSurge, addedNumber: 1 },
+    ],
+  },
+  {
     name: 'Rakna Helm',
     defense: 66,
-    decorationsNumber: 2,
-    slotLevel: 1,
+    decorations: [1, 1],
     skills: [
       { skill: skills.SpreadUp, addedNumber: 1 },
       { skill: skills.ReloadSpeed, addedNumber: 1 },
     ],
   },
   {
-    name: 'Ibushi Helm S',
+    name: 'Golden Headdress',
+    defense: 70,
+    decorations: [2, 1],
+    skills: [
+      { skill: skills.Heroics, addedNumber: 2 },
+      { skill: skills.MaximumMight, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Ibushis Helm',
     defense: 66,
-    decorationsNumber: 0,
-    slotLevel: 0,
+    decorations: [],
     skills: [
       { skill: skills.WindAlignment, addedNumber: 1 },
       { skill: skills.Focus, addedNumber: 1 },
       { skill: skills.EvadeExtender, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Narwas Helm',
+    defense: 76,
+    decorations: [],
+    skills: [
+      { skill: skills.ThunderAlignment, addedNumber: 1 },
+      { skill: skills.RapidMorph, addedNumber: 1 },
+      { skill: skills.OffensiveGuard, addedNumber: 1 },
     ],
   },
 ];

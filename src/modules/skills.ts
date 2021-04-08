@@ -1,3 +1,5 @@
+import { ISkill } from './interfaces';
+
 export const skills = {
   AffinitySliding: { name: 'Affinity Sliding', maxNumber: 1 },
   Agitator: { name: 'Agitator', maxNumber: 5 },
@@ -11,10 +13,13 @@ export const skills = {
   Bludgeoner: { name: 'Bludgeoner', maxNumber: 3 },
   Bombardier: { name: 'Bombardier', maxNumber: 3 },
   Botanist: { name: 'Botanist', maxNumber: 5 },
+  BowChargePlus: { name: 'Bow Charge Plus', maxNumber: 1 },
   BubblyDance: { name: 'Bubbly Dance', maxNumber: 3 },
+  CaptureMaster: { name: 'Capture Master', maxNumber: 1 },
   CarvingPro: { name: 'Carving Pro', maxNumber: 1 },
   Constitution: { name: 'Constitution', maxNumber: 5 },
   Counterstrike: { name: 'Counterstrike', maxNumber: 3 },
+  CriticalBoost: { name: 'Critical Boost', maxNumber: 3 },
   CriticalDraw: { name: 'Critical Draw', maxNumber: 3 },
   CriticalElement: { name: 'Critical Element', maxNumber: 3 },
   CriticalEye: { name: 'Critical Eye', maxNumber: 7 },

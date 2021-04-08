@@ -21,7 +21,7 @@
             <div class="option__desc">
               <span class="option__title">
                 {{ props.option.name }}
-                <span v-if="props.option.decorationsNumber > 0">{{ props.option.decorationsNumber }} Slots</span>
+                <span v-if="props.option.decorations.length > 0">{{ props.option.decorations }} Slots</span>
               </span>
               <div class="float-right">
                 <span v-for="skill in props.option.skills" :key="skill.index" class="option__title">
@@ -34,7 +34,7 @@
             <div class="option__desc">
               <span class="option__title">
                 {{ props.option.name }}
-                <span v-if="props.option.decorationsNumber > 0">{{ props.option.decorationsNumber }} Slots</span>
+                <span v-if="props.option.decorations.length > 0">{{ props.option.decorations }} Slots</span>
               </span>
               <div class="float-right">
                 <span v-for="skill in props.option.skills" :key="skill.index" class="option__title">
@@ -48,12 +48,12 @@
     </b-row>
     <b-row class="mt-2">
       <b-col cols="3">{{ armourType }} Slots</b-col>
-      <b-col v-for="decoration in armour.decorationsNumber" :key="decoration.index" cols="3">
-        {{ decoration }}. Slot (Level {{ armour.slotLevel }})
+      <b-col v-for="(decoration, index) in armour.decorations" :key="index" cols="3">
+        {{ index + 1 }}. Slot (Level {{ decoration }})
         <decoration
           ref="form"
-          :slotLevel="armour.slotLevel"
-          :slotPosition="decoration"
+          :decoration="decoration"
+          :slotPosition="index"
           @slot1Changed="slot1Changed"
           @slot2Changed="slot2Changed"
           @slot3Changed="slot3Changed"
@@ -73,10 +73,24 @@ export default class Armour extends Vue {
   @Prop() private armourOptions!: IArmour[];
   @Prop() private armourType!: string;
 
-  private armour: IArmour = { name: '', defense: 0, decorationsNumber: 0, slotLevel: 0, skills: [] };
-  private decorationSlot1: ISkills = { skill: { name: '', maxNumber: 0 }, addedNumber: 0 };
-  private decorationSlot2: ISkills = { skill: { name: '', maxNumber: 0 }, addedNumber: 0 };
-  private decorationSlot3: ISkills = { skill: { name: '', maxNumber: 0 }, addedNumber: 0 };
+  private armour: IArmour = {
+    name: '',
+    defense: 0,
+    decorations: [],
+    skills: [],
+  };
+  private decorationSlot1: ISkills = {
+    skill: { name: '', maxNumber: 0 },
+    addedNumber: 0,
+  };
+  private decorationSlot2: ISkills = {
+    skill: { name: '', maxNumber: 0 },
+    addedNumber: 0,
+  };
+  private decorationSlot3: ISkills = {
+    skill: { name: '', maxNumber: 0 },
+    addedNumber: 0,
+  };
 
   private get decorationsSlots(): ISkills[] {
     const result: ISkills[] = [];
@@ -117,10 +131,14 @@ export default class Armour extends Vue {
     this.searchableArmourOptions = result;
   }
 
+  $refs!: {
+    form: Decoration[];
+  };
+
   @Watch('armour')
   armourChanged(val: IArmour, oldVal: IArmour) {
-    for (let index = 0; index < oldVal.decorationsNumber; index++) {
-      (this.$refs.form as any)[index].clearSlot();
+    for (let index = 0; index < oldVal.decorations.length; index++) {
+      this.$refs.form[index].clearSlot();
     }
     switch (this.armourType) {
       case armourType.Helmet:

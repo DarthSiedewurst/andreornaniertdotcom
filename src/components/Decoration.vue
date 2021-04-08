@@ -1,7 +1,7 @@
 <template>
   <div>
     <multiselect
-      v-model="decoration"
+      v-model="decorationSlot"
       :options="decorationsList()"
       placeholder="Select one"
       label="skill"
@@ -23,12 +23,12 @@ import { ISkills } from '@/modules/interfaces';
 
 @Component({})
 export default class Decoration extends Vue {
-  @Prop() private slotLevel!: number;
+  @Prop() private decoration!: number;
   @Prop() private slotPosition!: number;
 
   private decorationsList(): ISkills[] {
     let result: ISkills[] = [];
-    switch (this.slotLevel) {
+    switch (this.decoration) {
       case 1:
         result = decorationsLevel1List;
         break;
@@ -43,23 +43,23 @@ export default class Decoration extends Vue {
     }
     return result;
   }
-  private decoration: ISkills = { skill: { name: '', maxNumber: 0 }, addedNumber: 0 };
+  private decorationSlot: ISkills = { skill: { name: '', maxNumber: 0 }, addedNumber: 0 };
 
   private customLabel(skill: ISkills): string {
     return skill.skill.name;
   }
 
-  @Watch('decoration')
+  @Watch('decorationSlot')
   armourChanged(val: ISkills) {
     if (val === null) val = { skill: { name: '', maxNumber: 0 }, addedNumber: 0 };
     switch (this.slotPosition) {
-      case 1:
+      case 0:
         this.$emit('slot1Changed', val);
         break;
-      case 2:
+      case 1:
         this.$emit('slot2Changed', val);
         break;
-      case 3:
+      case 2:
         this.$emit('slot3Changed', val);
         break;
       default:
@@ -67,8 +67,9 @@ export default class Decoration extends Vue {
     }
   }
 
-  private clearSlot() {
-    this.decoration = { skill: { name: '', maxNumber: 0 }, addedNumber: 0 };
+  public clearSlot() {
+    this.decorationSlot = { skill: { name: '', maxNumber: 0 }, addedNumber: 0 };
+    this.armourChanged({ skill: { name: '', maxNumber: 0 }, addedNumber: 0 });
   }
 }
 </script>
