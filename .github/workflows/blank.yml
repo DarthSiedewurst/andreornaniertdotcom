@@ -34,7 +34,7 @@ jobs:
             docker rmi andreornaniertdotcomimage
             docker build -t andreornaniertdotcomimage .
             docker container run -it -d -v"$(pwd):/code" --name andreornaniertdotcom andreornaniertdotcomimage
-            docker exec andreornaniertdotcom npm run install
+            docker exec andreornaniertdotcom npm i
             docker exec andreornaniertdotcom npm run build
             docker stop andreornaniertdotcom
             docker rm andreornaniertdotcom
