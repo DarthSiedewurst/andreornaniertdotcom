@@ -31,11 +31,10 @@ jobs:
           script: |
             cd /var/www/vhosts/andreornaniert.com/docker/andreornaniertdotcom
             git pull
-            docker rm andreornaniertdotcom
             docker rmi andreornaniertdotcomimage
             docker build -t andreornaniertdotcomimage .
-            docker run -v"$(pwd):/code" --name andreornaniertdotcom andreornaniertdotcomimage .
-            npm run install
-            npm run build
-            exit
+            docker container run -it -d -v"$(pwd):/code" --name andreornaniertdotcom andreornaniertdotcomimage
+            docker exec andreornaniertdotcom npm run install
+            docker exec andreornaniertdotcom npm run build
             docker stop andreornaniertdotcom
+            docker rm andreornaniertdotcom
