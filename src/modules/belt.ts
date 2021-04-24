@@ -430,7 +430,7 @@ export const beltList: IArmour[] = [
     name: 'Rakna Coil ',
     defense: 66,
     decorations: [2, 2],
-    skills: [{ skill: skills.SpreadUp, addedNumber: 2 }],
+    skills: [{ skill: skills.SpreadUp, addedNumber: 1 }],
   },
   {
     name: 'Golden Obi',
