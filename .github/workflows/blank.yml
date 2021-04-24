@@ -33,7 +33,7 @@ jobs:
             git pull
             docker rmi andreornaniertdotcomimage
             docker build -t andreornaniertdotcomimage .
-            docker container run -it -d -v"$(pwd):/code" --name andreornaniertdotcom andreornaniertdotcomimage
+            docker container run -it -d -v"$(pwd):/app" --name andreornaniertdotcom andreornaniertdotcomimage
             docker exec andreornaniertdotcom npm i
             docker exec andreornaniertdotcom npm run build
             docker stop andreornaniertdotcom
