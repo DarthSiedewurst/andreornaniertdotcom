@@ -30,6 +30,7 @@ jobs:
           password: ${{ secrets.PW }}
           script: |
             cd /var/www/vhosts/andreornaniert.com/docker/andreornaniertdotcom
+            git reset --hard
             git pull
             docker rmi andreornaniertdotcomimage
             docker build -t andreornaniertdotcomimage .
