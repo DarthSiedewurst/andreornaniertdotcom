@@ -462,6 +462,30 @@ export const bootsList: IArmour[] = [
     ],
   },
   {
+    name: 'Damascus Greaves',
+    defense: 68,
+    decorations: [1],
+    skills: [{ skill: skills.Handicraft, addedNumber: 2 }],
+  },
+  {
+    name: 'Mizuha Guards',
+    defense: 74,
+    decorations: [2],
+    skills: [
+      { skill: skills.ChameleosBlessing, addedNumber: 1 },
+      { skill: skills.EvadeWindow, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Bazelgeuse Greaves',
+    defense: 72,
+    decorations: [2],
+    skills: [
+      { skill: skills.Artillery, addedNumber: 2 },
+      { skill: skills.Guard, addedNumber: 1 },
+    ],
+  },
+  {
     name: 'Foot of Ibushi',
     defense: 66,
     decorations: [],

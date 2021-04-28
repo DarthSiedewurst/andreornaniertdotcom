@@ -487,6 +487,40 @@ export const helmetList: IArmour[] = [
     ],
   },
   {
+    name: 'Damascus Helm',
+    defense: 68,
+    decorations: [],
+    skills: [
+      { skill: skills.TremorResistance, addedNumber: 2 },
+      { skill: skills.Earplugs, addedNumber: 2 },
+    ],
+  },
+  {
+    name: 'Flame Seal',
+    defense: 56,
+    decorations: [],
+    skills: [{ skill: skills.CriticalEye, addedNumber: 4 }],
+  },
+  {
+    name: 'Mizuha Cap',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.MindsEye, addedNumber: 2 },
+      { skill: skills.Ballistics, addedNumber: 2 },
+      { skill: skills.EvadeWindow, addedNumber: 2 },
+    ],
+  },
+  {
+    name: 'Bazelgeuse Helm',
+    defense: 72,
+    decorations: [2],
+    skills: [
+      { skill: skills.Artillery, addedNumber: 1 },
+      { skill: skills.Guard, addedNumber: 1 },
+    ],
+  },
+  {
     name: 'Ibushis Helm',
     defense: 66,
     decorations: [],

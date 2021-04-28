@@ -494,6 +494,35 @@ export const bodyList: IArmour[] = [
     ],
   },
   {
+    name: 'Damascus Mail',
+    defense: 68,
+    decorations: [1, 1],
+    skills: [
+      { skill: skills.TremorResistance, addedNumber: 1 },
+      { skill: skills.Handicraft, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Mizuha Guards',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.ChameleosBlessing, addedNumber: 1 },
+      { skill: skills.PoisonAttack, addedNumber: 1 },
+      { skill: skills.MindsEye, addedNumber: 1 },
+      { skill: skills.Ballistics, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Bazelgeuse Mail',
+    defense: 72,
+    decorations: [1, 1],
+    skills: [
+      { skill: skills.GuardUp, addedNumber: 2 },
+      { skill: skills.Agitator, addedNumber: 1 },
+    ],
+  },
+  {
     name: 'Ibushis Brestplate',
     defense: 66,
     decorations: [],

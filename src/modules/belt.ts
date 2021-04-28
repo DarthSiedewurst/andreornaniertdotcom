@@ -443,6 +443,34 @@ export const beltList: IArmour[] = [
     ],
   },
   {
+    name: 'Damascus Coil',
+    defense: 68,
+    decorations: [1],
+    skills: [
+      { skill: skills.Earplugs, addedNumber: 1 },
+      { skill: skills.Handicraft, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Mizuha Slash',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.ChameleosBlessing, addedNumber: 1 },
+      { skill: skills.PoisonAttack, addedNumber: 1 },
+      { skill: skills.PeakPerformance, addedNumber: 2 },
+    ],
+  },
+  {
+    name: 'Bazelgeuse Coil',
+    defense: 72,
+    decorations: [2, 2],
+    skills: [
+      { skill: skills.LoadShells, addedNumber: 1 },
+      { skill: skills.Guard, addedNumber: 1 },
+    ],
+  },
+  {
     name: 'Ibushis Fauld',
     defense: 66,
     decorations: [],

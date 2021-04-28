@@ -453,6 +453,31 @@ export const glovesList: IArmour[] = [
     ],
   },
   {
+    name: 'Damascus Vambraces',
+    defense: 68,
+    decorations: [2, 1],
+    skills: [{ skill: skills.Earplugs, addedNumber: 1 }],
+  },
+  {
+    name: 'Mizuha Sleeves',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.ChameleosBlessing, addedNumber: 1 },
+      { skill: skills.PoisonAttack, addedNumber: 1 },
+      { skill: skills.EvadeWindow, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Bazelgeuse Braces',
+    defense: 72,
+    decorations: [2, 2],
+    skills: [
+      { skill: skills.LoadShells, addedNumber: 1 },
+      { skill: skills.GuardUp, addedNumber: 1 },
+    ],
+  },
+  {
     name: 'Ibushis Pauldrons',
     defense: 66,
     decorations: [],
