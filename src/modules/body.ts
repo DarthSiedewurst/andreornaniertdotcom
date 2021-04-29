@@ -503,6 +503,16 @@ export const bodyList: IArmour[] = [
     ],
   },
   {
+    name: 'Kushala Cista',
+    defense: 74,
+    decorations: [2],
+    skills: [
+      { skill: skills.KushalaBlessing, addedNumber: 1 },
+      { skill: skills.RecoverySpeed, addedNumber: 1 },
+      { skill: skills.Diversion, addedNumber: 1 },
+    ],
+  },
+  {
     name: 'Mizuha Guards',
     defense: 74,
     decorations: [1],
@@ -511,6 +521,16 @@ export const bodyList: IArmour[] = [
       { skill: skills.PoisonAttack, addedNumber: 1 },
       { skill: skills.MindsEye, addedNumber: 1 },
       { skill: skills.Ballistics, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Kaiser Mail',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.TeostraBlessing, addedNumber: 1 },
+      { skill: skills.CriticalEye, addedNumber: 1 },
+      { skill: skills.MastersTouch, addedNumber: 1 },
     ],
   },
   {

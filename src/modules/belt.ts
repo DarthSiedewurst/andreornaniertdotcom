@@ -462,6 +462,26 @@ export const beltList: IArmour[] = [
     ],
   },
   {
+    name: 'Kushala Cocoon',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.KushalaBlessing, addedNumber: 1 },
+      { skill: skills.RecoverySpeed, addedNumber: 1 },
+      { skill: skills.Handicraft, addedNumber: 1 },
+      { skill: skills.PierceUp, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Kaiser Coil',
+    defense: 74,
+    decorations: [3],
+    skills: [
+      { skill: skills.TeostraBlessing, addedNumber: 1 },
+      { skill: skills.CriticalEye, addedNumber: 1 },
+    ],
+  },
+  {
     name: 'Bazelgeuse Coil',
     defense: 72,
     decorations: [2, 2],

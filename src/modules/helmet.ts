@@ -502,6 +502,15 @@ export const helmetList: IArmour[] = [
     skills: [{ skill: skills.CriticalEye, addedNumber: 4 }],
   },
   {
+    name: 'Kushala Glare',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.Handicraft, addedNumber: 2 },
+      { skill: skills.NormalRapidUp, addedNumber: 2 },
+    ],
+  },
+  {
     name: 'Mizuha Cap',
     defense: 74,
     decorations: [1],
@@ -509,6 +518,15 @@ export const helmetList: IArmour[] = [
       { skill: skills.MindsEye, addedNumber: 2 },
       { skill: skills.Ballistics, addedNumber: 2 },
       { skill: skills.EvadeWindow, addedNumber: 2 },
+    ],
+  },
+  {
+    name: 'Kaiser Crown',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.CriticalEye, addedNumber: 3 },
+      { skill: skills.CriticalBoost, addedNumber: 1 },
     ],
   },
   {

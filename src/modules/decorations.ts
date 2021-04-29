@@ -2,7 +2,6 @@ import { ISkills } from './interfaces';
 import { skills } from './skills';
 
 export const decorationsLevel1List: ISkills[] = [
-  { skill: skills.RecoilDown, addedNumber: 1 },
   { skill: skills.ReloadSpeed, addedNumber: 1 },
   { skill: skills.BlastResistance, addedNumber: 1 },
   { skill: skills.PoisonResistance, addedNumber: 1 },

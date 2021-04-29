@@ -459,6 +459,16 @@ export const glovesList: IArmour[] = [
     skills: [{ skill: skills.Earplugs, addedNumber: 1 }],
   },
   {
+    name: 'Kushala Grip',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.KushalaBlessing, addedNumber: 1 },
+      { skill: skills.RecoverySpeed, addedNumber: 1 },
+      { skill: skills.Agitator, addedNumber: 2 },
+    ],
+  },
+  {
     name: 'Mizuha Sleeves',
     defense: 74,
     decorations: [1],
@@ -466,6 +476,16 @@ export const glovesList: IArmour[] = [
       { skill: skills.ChameleosBlessing, addedNumber: 1 },
       { skill: skills.PoisonAttack, addedNumber: 1 },
       { skill: skills.EvadeWindow, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Kaiser Vambraces',
+    defense: 74,
+    decorations: [2],
+    skills: [
+      { skill: skills.TeostraBlessing, addedNumber: 1 },
+      { skill: skills.CriticalEye, addedNumber: 1 },
+      { skill: skills.CriticalBoost, addedNumber: 1 },
     ],
   },
   {

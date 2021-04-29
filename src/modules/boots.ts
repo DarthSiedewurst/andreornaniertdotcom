@@ -468,12 +468,31 @@ export const bootsList: IArmour[] = [
     skills: [{ skill: skills.Handicraft, addedNumber: 2 }],
   },
   {
+    name: 'Kushala Glare',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.KushalaBlessing, addedNumber: 1 },
+      { skill: skills.Handicraft, addedNumber: 1 },
+      { skill: skills.PierceUp, addedNumber: 1 },
+    ],
+  },
+  {
     name: 'Mizuha Guards',
     defense: 74,
     decorations: [2],
     skills: [
       { skill: skills.ChameleosBlessing, addedNumber: 1 },
       { skill: skills.EvadeWindow, addedNumber: 1 },
+    ],
+  },
+  {
+    name: 'Kaiser Greaves',
+    defense: 74,
+    decorations: [1],
+    skills: [
+      { skill: skills.TeostraBlessing, addedNumber: 3 },
+      { skill: skills.MastersTouch, addedNumber: 1 },
     ],
   },
   {
