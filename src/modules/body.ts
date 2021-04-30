@@ -562,4 +562,10 @@ export const bodyList: IArmour[] = [
       { skill: skills.CriticalDraw, addedNumber: 1 },
     ],
   },
+  {
+    name: 'Jelly Vest S',
+    defense: 62,
+    decorations: [2, 1],
+    skills: [{ skill: skills.BlastAttack, addedNumber: 2 }],
+  },
 ];

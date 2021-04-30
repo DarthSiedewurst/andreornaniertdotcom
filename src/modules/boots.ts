@@ -524,4 +524,10 @@ export const bootsList: IArmour[] = [
       { skill: skills.MarathonRunner, addedNumber: 1 },
     ],
   },
+  {
+    name: 'Jelly Boots S',
+    defense: 62,
+    decorations: [3, 1],
+    skills: [{ skill: skills.BlastAttack, addedNumber: 1 }],
+  },
 ];

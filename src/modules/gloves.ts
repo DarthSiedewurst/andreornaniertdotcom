@@ -517,4 +517,10 @@ export const glovesList: IArmour[] = [
       { skill: skills.Partbreaker, addedNumber: 1 },
     ],
   },
+  {
+    name: 'Jelly Gloves S',
+    defense: 62,
+    decorations: [1, 1],
+    skills: [{ skill: skills.DivineBlessing, addedNumber: 2 }],
+  },
 ];

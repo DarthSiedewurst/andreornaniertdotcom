@@ -510,4 +510,10 @@ export const beltList: IArmour[] = [
       { skill: skills.Artillery, addedNumber: 1 },
     ],
   },
+  {
+    name: 'Jelly Coil S',
+    defense: 62,
+    decorations: [2, 1],
+    skills: [{ skill: skills.Partbreaker, addedNumber: 2 }],
+  },
 ];

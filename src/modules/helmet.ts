@@ -558,4 +558,13 @@ export const helmetList: IArmour[] = [
       { skill: skills.OffensiveGuard, addedNumber: 1 },
     ],
   },
+  {
+    name: 'Jelly Hat S',
+    defense: 62,
+    decorations: [3],
+    skills: [
+      { skill: skills.Partbreaker, addedNumber: 1 },
+      { skill: skills.DivineBlessing, addedNumber: 1 },
+    ],
+  },
 ];
