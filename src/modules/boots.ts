@@ -491,7 +491,7 @@ export const bootsList: IArmour[] = [
     defense: 74,
     decorations: [1],
     skills: [
-      { skill: skills.TeostraBlessing, addedNumber: 3 },
+      { skill: skills.TeostraBlessing, addedNumber: 1 },
       { skill: skills.MastersTouch, addedNumber: 1 },
     ],
   },
