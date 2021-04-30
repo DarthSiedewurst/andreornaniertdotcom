@@ -48,7 +48,7 @@ export const skills = {
   Heroics: { name: 'Heroics', maxNumber: 5 },
   HornMaestro: { name: 'Horn Maestro', maxNumber: 1 },
   HungerResistance: { name: 'Hunger Resistance', maxNumber: 3 },
-  IceAttack: { name: 'Ice Attack', maxNumber: 3 },
+  IceAttack: { name: 'Ice Attack', maxNumber: 5 },
   IceResistance: { name: 'Ice Resistance', maxNumber: 5 },
   ItemProlonger: { name: 'Item Prolonger', maxNumber: 3 },
   JumpMaster: { name: 'Jump Master', maxNumber: 1 },
