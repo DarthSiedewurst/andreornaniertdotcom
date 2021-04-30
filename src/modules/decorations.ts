@@ -92,6 +92,7 @@ export const decorationsLevel2List: ISkills[] = [
   { skill: skills.PeakPerformance, addedNumber: 1 },
   { skill: skills.Agitator, addedNumber: 1 },
   { skill: skills.MastersTouch, addedNumber: 1 },
+  { skill: skills.CriticalBoost, addedNumber: 1 },
 ];
 
 export const decorationsLevel3List: ISkills[] = [
